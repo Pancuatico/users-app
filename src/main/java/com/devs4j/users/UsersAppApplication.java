@@ -25,7 +25,7 @@ public class UsersAppApplication implements ApplicationRunner{
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {		//Creamos los usuarios (in memory) al iniciar la APP
-		for(int i=0; i<20; i++) {
+		for(int i=0; i<35; i++) {
 			User user = new User();
 			user.setUsername(faker.name().username());
 			user.setPassword(faker.dragonBall().character());
