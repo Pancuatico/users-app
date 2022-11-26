@@ -1,6 +1,5 @@
 package com.devs4j.users.models;
 
-import com.devs4j.users.entities.Profile;
 
 public class User {
 	private String nickName;

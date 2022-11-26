@@ -16,6 +16,7 @@ public class UsersAppApplication implements ApplicationRunner{
 	@Autowired
 	private Faker faker;
 	
+	@Autowired
 	private UserRepository repository;
 	
 	public static void main(String[] args) {
@@ -23,7 +24,7 @@ public class UsersAppApplication implements ApplicationRunner{
 	}
 
 	@Override
-	public void run(ApplicationArguments args) throws Exception {
+	public void run(ApplicationArguments args) throws Exception {		//Creamos los usuarios (in memory) al iniciar la APP
 		for(int i=0; i<20; i++) {
 			User user = new User();
 			user.setUsername(faker.name().username());
