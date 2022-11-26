@@ -1,23 +1,22 @@
 package com.devs4j.users.models;
 
+import com.devs4j.users.entities.Profile;
 
 public class User {
 	private String nickName;
 	private String username;
 	private String password;
 	
+	
 	public User() {
 		
 	}
-
-	
 	
 	public User(String nickName, String username, String password) {
 		this.nickName = nickName;
 		this.username = username;
 		this.password = password;
 	}
-
 
 
 	public String getNickName() {
